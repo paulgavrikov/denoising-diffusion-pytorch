@@ -446,7 +446,7 @@ class GaussianDiffusion(nn.Module):
 # dataset classes
 
 class Dataset(data.Dataset):
-    def __init__(self, folder, image_size, exts = ['jpg', 'jpeg', 'png']):
+    def __init__(self, folder, image_size, exts = ['jpg', 'jpeg', 'png', 'JPG', 'JPEG', 'PNG']):
         super().__init__()
         self.folder = folder
         self.image_size = image_size
